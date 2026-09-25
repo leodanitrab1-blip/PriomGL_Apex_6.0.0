@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>PriomGL Apex 6 — Virtual World Renderer</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html, body { width: 100%; height: 100%; overflow: hidden; background: #050510; font-family: system-ui, sans-serif; }
+        #canvas { display: block; width: 100%; height: 100%; outline: none; }
+        #loading {
+            position: fixed; inset: 0; background: #050510;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;
+            z-index: 1000; transition: opacity 0.7s;
+        }
+        #loading .logo { font-size: 40px; font-weight: 800; background: linear-gradient(135deg, #38bdf8, #a78bfa, #f472b6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        #loading .sub { color: #64748b; font-size: 12px; margin-top: 8px; }
+        #loading .bar { width: 200px; height: 3px; background: #1e293b; border-radius: 2px; overflow: hidden; margin-top: 20px; }
+        #loading .bar > div { height: 100%; width: 0%; background: linear-gradient(90deg, #38bdf8, #a78bfa); transition: width 0.25s; }
+        #badge {
+            position: fixed; top: 12px; left: 12px; z-index: 100;
+            background: rgba(5,5,16,0.85); backdrop-filter: blur(12px);
+            border: 1px solid rgba(56,189,248,0.3); border-radius: 10px;
+            padding: 7px 14px; font-size: 11px; color: #e2e8f0; font-weight: 600;
+            pointer-events: none;
+        }
+        #badge span { color: #38bdf8; }
+        #hud {
+            position: fixed; top: 12px; right: 12px; z-index: 100;
+            background: rgba(5,5,16,0.85); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.06); border-radius: 12px;
+            padding: 10px 14px; min-width: 150px; pointer-events: none;
+            font-size: 10px; color: #94a3b8;
+        }
+        #hud .stat { display: flex; justify-content: space-between; padding: 2px 0; }
+        #hud .stat .value { color: #f8fafc; font-weight: 600; }
+        #hud .stat .value.good { color: #34d399; }
+        #hud .stat .value.warn { color: #fbbf24; }
+        #hud .stat .value.ultra { color: #f472b6; }
+        #hud .stat .value.meta { color: #38bdf8; }
+        #hud .stat .value.ai { color: #a78bfa; }
+        #help {
+            position: fixed; bottom: 16px; left: 50%; transform: translateX(-50%);
+            background: rgba(5,5,16,0.82); backdrop-filter: blur(14px);
+            border: 1px solid rgba(255,255,255,0.07); border-radius: 999px;
+            padding: 7px 18px; font-size: 10px; color: #94a3b8; z-index: 90;
+            pointer-events: none; text-align: center;
+        }
+        #controls {
+            position: fixed; bottom: 70px; left: 50%; transform: translateX(-50%);
+            display: flex; gap: 6px; flex-wrap: wrap; justify-content: center;
+            z-index: 90; pointer-events: none;
+        }
+        #controls button {
+            pointer-events: auto; background: rgba(5,5,16,0.8); backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.1); border-radius: 999px;
+            padding: 6px 14px; font: 500 11px system-ui; color: #e2e8f0;
+            cursor: pointer; transition: all 0.2s;
+        }
+        #controls button:hover { background: rgba(56,189,248,0.2); border-color: #38bdf8; }
+        #controls button.active { background: rgba(167,139,250,0.25); border-color: #a78bfa; }
+        @media (max-width: 700px) {
+            #hud { top: auto; bottom: 120px; right: 8px; min-width: 120px; padding: 8px 10px; font-size: 9px; }
+            #help { font-size: 8px; padding: 4px 12px; }
+            #controls { bottom: 60px; }
+            #controls button { font-size: 9px; padding: 4px 10px; }
+            #badge { font-size: 9px; padding: 4px 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <div class="logo">PriomGL</div>
+        <div class="sub">Polyglot · HW DNA · C++/JS/Python/Kotlin</div>
+        <div class="bar"><div id="load-bar"></div></div>
+    </div>
+
+    <div id="badge">🚀 <span>PriomGL Apex 6</span> · <span id="renderer-badge">Renderer inicializando…</span> · Meshlets · Trinity AI</div>
+
+    <div id="controls">
+        <button id="btn-cinematic" class="active">🎬 Cinemática</button>
+        <button id="btn-weather">🌦️ Clima</button>
+        <button id="btn-ssao">🌓 SSAO</button>
+        <button id="btn-bloom">✨ Bloom</button>
+        <button id="btn-kenney">🌲 Modelos reales</button>
+        <button id="btn-village">🏘️ Aldea Kenney</button>
+        <button id="btn-outpost">🏭 Puesto industrial</button>
+        <button id="btn-fauna">🐾 Generar fauna</button>
+        <button id="btn-ecosystem">🌿 Ecosistema Apex</button>
+        <button id="btn-forge">🧬 Forge 6</button>
+        <button id="btn-gpu">⚡ GPU Culling</button>
+    </div>
+
+    <div id="hud"><div id="hud-stats">Cargando...</div></div>
+    <div id="help">Móvil: joystick izq = mover · lado derecho = mirar · Desktop: WASD + Ratón · C = Cinemática</div>
+
+    <canvas id="canvas" tabindex="0"></canvas>
+
+    <!-- POLYGLOT CORE -->
+    <script src="hw/HardwareProfiler.js" onerror="console.warn('PriomGL: no se pudo cargar hw/HardwareProfiler.js')"></script>
+    <script src="bridge/PolyglotBridge.js" onerror="console.warn('PriomGL: no se pudo cargar bridge/PolyglotBridge.js')"></script>
+
+    <!-- MOTOR (JS host) -->
+    <script src="js/core/math.js"></script>
+    <script src="js/core/webgl.js"></script>
+    <script src="js/renderer/shaders.js"></script>
+    <script src="js/renderer/PriomRenderer.js"></script>
+    <script src="js/renderer/WebGPURenderer.js"></script>
+    <script src="js/geometry/MeshletLOD.js"></script>
+    <script src="js/renderer/materials/AdvancedMaterialLibrary.js"></script>
+    <!-- MaterialLibrary must load before AnatomySystem.js: AnatomySystem reads
+         window.PriomGL.MaterialLibrary synchronously at script-parse time
+         (const { MaterialLibrary } = P), not lazily inside a function. Loading
+         it afterward silently captured `undefined`, which surfaced later as
+         "Cannot read properties of undefined (reading 'furDeer')" the moment
+         any wildlife (deer/wolf/bear) was built — a black-screen, frame-loop
+         crash that repeated forever since the render loop retries every frame. -->
+    <script src="js/renderer/materials/MaterialLibrary.js"></script>
+    <script src="js/ecs/EntityModeling.js"></script>
+    <script src="js/procedural/SculptingSystem.js"></script>
+    <script src="js/procedural/AnatomySystem.js"></script>
+    <script src="js/procedural/DendrologySystem.js"></script>
+    <script src="js/world/ClimateEngine.js"></script>
+    <script src="js/ai/TrinityNeuralCore.js"></script>
+    <script src="js/loaders/GLTFLoader.js"></script>
+    <script src="js/ecs/InstancedEntities.js"></script>
+    <script src="js/physics/PhysicsWorld.js"></script>
+    <script src="js/renderer/vfx/ParticleSystem.js"></script>
+    <script src="js/game/Terrain.js"></script>
+    <script src="js/ai/WorldAI.js"></script>
+    <script src="js/ai/OptimizerAI.js"></script>
+    <script src="js/ai/MetaOptimizerAI.js"></script>
+    <script src="js/utils/Wildlife.js"></script>
+    <script src="js/nature/ProceduralNatureStudio.js"></script>
+    <script src="js/engine/PriomEngine.js"></script>
+    <script src="js/apex5/CorrelationProcessor.js"></script>
+    <script src="js/apex5/TextureMaterialSystem.js"></script>
+    <script src="js/apex5/ApexWorldSystem.js"></script>
+    <script src="js/apex5/Apex5.js"></script>
+    <script src="js/apex6/Apex6.js"></script>
+
+    <script>
+        // Apex 6.1.2 bootstrap hardening: the profiler is optional at startup.
+        // Some static hosts/CDNs can serve the page before a relative /hw/ asset
+        // is available; never let that turn into a black-screen fatal error.
+        (function ensureHardwareProfiler() {
+            if (window.PriomHW && typeof window.PriomHW.HardwareProfiler === 'function') return;
+            console.warn('⚠️ PriomGL: HardwareProfiler.js no disponible; usando perfil seguro de emergencia.');
+            window.PriomHW = window.PriomHW || {};
+            window.PriomHW.HardwareProfiler = class {
+                async profile() {
+                    const mobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent || '');
+                    const cores = navigator.hardwareConcurrency || 4;
+                    const memory = navigator.deviceMemory || 4;
+                    const score = Math.max(25, Math.min(85, 35 + cores * 5 + Math.min(memory, 8) * 2));
+                    return {
+                        tier: mobile ? (score >= 55 ? 'medium' : 'low') : (score >= 65 ? 'high' : 'medium'),
+                        score,
+                        gpu: { family: 'unknown', renderer: 'fallback' },
+                        platform: { isMobile: mobile, touch: navigator.maxTouchPoints || 0, language: navigator.language || 'en' },
+                        webgl: { version: 0 },
+                        recommendations: {
+                            maxPixelRatio: mobile ? 1.0 : 1.25,
+                            terrainSegments: mobile ? 96 : 144,
+                            targetFPS: mobile ? 30 : 45,
+                            postQuality: mobile ? 0.3 : 0.6,
+                            useAnisotropy: false
+                        }
+                    };
+                }
+                getDNA() { return null; }
+                summary() { return 'Fallback hardware profile'; }
+            };
+        })();
+
+        (async function() {
+            const bar = document.getElementById('load-bar');
+            const loading = document.getElementById('loading');
+            const setProg = (p) => { bar.style.width = Math.min(100, p) + '%'; };
+
+            try {
+                setProg(8);
+                const canvas = document.getElementById('canvas');
+
+                // 1. Hardware DNA
+                const profiler = new window.PriomHW.HardwareProfiler();
+                setProg(20);
+                const dna = await profiler.profile(canvas);
+                // The profiler must never have claimed the main canvas context;
+                // WebGPU gets first ownership below.
+                console.log('🧪 Render canvas remains context-free after hardware probe:', !!navigator.gpu);
+                setProg(45);
+                console.log('🧬 HardwareDNA:', dna.tier, dna.score, dna.gpu.family);
+
+                // 2. Polyglot Bridge
+                const bridge = new window.PriomPolyglot.Bridge();
+                bridge.bindHardware(dna);
+                window.__priomBridge = bridge;
+                window.__priomDNA = dna;
+                setProg(50);
+
+                // 2b. Mentes nativas reales, en paralelo (nunca bloquean el
+                // arranque): tablas Python de verdad si el server las sirve,
+                // y kernels C++ compilados a WASM si alguien corrió
+                // native/cpp/build_wasm.sh. Ambas tienen fallback JS.
+                await Promise.all([
+                    bridge.loadPythonData(),
+                    bridge.loadWasmKernels(),
+                    bridge.loadCoreWasm()
+                ]);
+                setProg(60);
+
+                if (typeof window.PriomEngine === 'undefined') {
+                    throw new Error('PriomEngine no está definido');
+                }
+
+                // 3. Engine with DNA
+                const engine = new window.PriomEngine(canvas, { hardwareDNA: dna, polyglot: bridge });
+                const rendererBadge = document.getElementById('renderer-badge');
+                const badgeTimer = setInterval(() => {
+                    if (rendererBadge && engine.rendererStatus) rendererBadge.textContent = engine.rendererStatus;
+                    if (engine.rendererStatus === 'WebGPU activo' || (engine.rendererStatus || '').startsWith('WebGL2')) clearInterval(badgeTimer);
+                }, 100);
+                window.__priomEngine = engine; // debug/testing hook
+                // Apex 5 world upgrade: real material textures, grass/leaf layers,
+                // a terrain-following river, correlation memory and on-demand fauna.
+                if (window.PriomGL.Apex5) await window.PriomGL.Apex5.install(engine);
+                if (window.PriomGL.Apex6WorldForge) { window.__apex6 = await new window.PriomGL.Apex6WorldForge(engine).install(); }
+                // Start the simulation immediately; WebGPU's render() safely no-ops until
+                // its async pipeline is ready, then the first frame appears. If
+                // initialization fails, the existing Promise installs WebGL2.
+                engine.start();
+                window.__priom = engine;
+                setProg(90);
+
+                // Real glTF/GLB model loading is wired up and tested (see
+                // CHANGELOG v12 and docs/GLTFLoader.md) via
+                // engine.loadModel(url, placement) — e.g. from the browser
+                // console:
+                //   await __priomEngine.loadModel('models/my_rock.glb', { position: [0, 5, 0], scale: 2 })
+                // Not auto-loading anything here on every session start —
+                // models/test_cube.glb is a verification asset
+                // (make_test_glb.py), not something that belongs floating
+                // in the actual game world.
+
+                const bind = (id, fn) => {
+                    const el = document.getElementById(id);
+                    if (el) el.addEventListener('click', () => fn(engine));
+                };
+                bind('btn-cinematic', (e) => {
+                    e.toggleCinematic();
+                    document.getElementById('btn-cinematic').classList.toggle('active');
+                });
+                bind('btn-weather', (e) => {
+                    if (e.worldAI) {
+                        const cycles = ['despejado', 'nublado', 'lluvia', 'tormenta', 'niebla', 'nieve'];
+                        const idx = cycles.indexOf(e.worldAI.weather);
+                        e.worldAI.weather = cycles[(idx + 1) % cycles.length];
+                        e.worldAI.weatherTimer = 0;
+                        e.worldAI.weatherDuration = 10;
+                    }
+                });
+                bind('btn-ssao', (e) => {
+                    e.renderer.ssaoEnabled = !e.renderer.ssaoEnabled;
+                    document.getElementById('btn-ssao').classList.toggle('active');
+                });
+                bind('btn-bloom', (e) => {
+                    e.renderer.bloomEnabled = !e.renderer.bloomEnabled;
+                    document.getElementById('btn-bloom').classList.toggle('active');
+                });
+                bind('btn-kenney', async (e) => {
+                    const btn = document.getElementById('btn-kenney');
+                    if (btn.dataset.busy || btn.dataset.done) return;
+                    btn.dataset.busy = '1';
+                    btn.textContent = '⏳ Cargando modelos…';
+                    try {
+                        const ok = await e.upgradeToKenneyForest();
+                        btn.textContent = ok ? '🌲 Modelos reales ✓' : '🌲 Falló (ver consola)';
+                        if (ok) { btn.classList.add('active'); btn.dataset.done = '1'; }
+                    } catch (err) {
+                        console.error(err);
+                        btn.textContent = '🌲 Error (ver consola)';
+                    }
+                    delete btn.dataset.busy;
+                });
+                bind('btn-village', async (e) => {
+                    const btn = document.getElementById('btn-village');
+                    if (btn.dataset.busy || btn.dataset.done) return;
+                    btn.dataset.busy = '1';
+                    btn.textContent = '⏳ Construyendo aldea…';
+                    try {
+                        const ok = await e.upgradeToKenneyVillage();
+                        btn.textContent = ok ? '🏘️ Aldea Kenney ✓' : '🏘️ Falló (ver consola)';
+                        if (ok) { btn.classList.add('active'); btn.dataset.done = '1'; }
+                    } catch (err) {
+                        console.error(err);
+                        btn.textContent = '🏘️ Error (ver consola)';
+                    }
+                    delete btn.dataset.busy;
+                });
+                bind('btn-fauna', (e) => {
+                    const btn = document.getElementById('btn-fauna');
+                    const n = e.spawnProceduralFauna ? e.spawnProceduralFauna(9) : 0;
+                    btn.textContent = n ? '🐾 Fauna generada ✓' : '🐾 Sin terreno';
+                    if (n) btn.classList.add('active');
+                });
+                bind('btn-ecosystem', (e) => {
+                    if (e.apex5World && e.apex5World.ready) {
+                        e.apex5World.spawnFauna(Math.max(3, 12 - (e.worldAI?.animals?.length || 0)));
+                        document.getElementById('btn-ecosystem').classList.add('active');
+                    }
+                });
+                bind('btn-forge', (e) => { const b=document.getElementById('btn-forge'); if(e.apex6){ b.textContent='🧬 Forge 6 ✓'; b.classList.add('active'); console.log('Apex6 Forge:',e.apex6.summary()); }});
+                bind('btn-gpu', (e) => { const b=document.getElementById('btn-gpu'); if(e.apex6){e.apex6.toggleGPUCulling(); b.textContent=e.renderer.gpuCullingEnabled===false?'⚡ GPU Culling OFF':'⚡ GPU Culling ON'; b.classList.toggle('active',e.renderer.gpuCullingEnabled!==false); }});
+                bind('btn-outpost', async (e) => {
+                    const btn = document.getElementById('btn-outpost');
+                    if (btn.dataset.busy || btn.dataset.done) return;
+                    btn.dataset.busy = '1';
+                    btn.textContent = '⏳ Construyendo puesto…';
+                    try {
+                        const ok = await e.spawnKenneyOutpost();
+                        btn.textContent = ok ? '🏭 Puesto industrial ✓' : '🏭 Falló (ver consola)';
+                        if (ok) { btn.classList.add('active'); btn.dataset.done = '1'; }
+                    } catch (err) {
+                        console.error(err);
+                        btn.textContent = '🏭 Error (ver consola)';
+                    }
+                    delete btn.dataset.busy;
+                });
+
+                setProg(100);
+                loading.style.opacity = '0';
+                setTimeout(() => loading.remove(), 700);
+                console.log('✅ PriomGL Apex 6 Virtual World Renderer listo —', profiler.summary());
+            } catch (err) {
+                console.error('Error:', err);
+                loading.innerHTML = '<div style="color:#f87171;padding:20px;text-align:center;">Error: ' + err.message + '</div>';
+            }
+        })();
+    </script>
+</body>
+</html>

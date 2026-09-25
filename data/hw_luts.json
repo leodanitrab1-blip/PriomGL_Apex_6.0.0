@@ -1,0 +1,363 @@
+{
+  "version": 5,
+  "generator": "PriomGL Python LUT Forge",
+  "tier_budget": {
+    "ultra": {
+      "entities": 1.15,
+      "shadows": 1.2,
+      "post": 1.15,
+      "pixels": 1.0
+    },
+    "high": {
+      "entities": 1.0,
+      "shadows": 1.0,
+      "post": 1.0,
+      "pixels": 0.95
+    },
+    "medium": {
+      "entities": 0.72,
+      "shadows": 0.7,
+      "post": 0.65,
+      "pixels": 0.85
+    },
+    "low": {
+      "entities": 0.42,
+      "shadows": 0.4,
+      "post": 0.35,
+      "pixels": 0.7
+    },
+    "potato": {
+      "entities": 0.2,
+      "shadows": 0.15,
+      "post": 0.15,
+      "pixels": 0.5
+    }
+  },
+  "aggressiveness_curve": [
+    {
+      "score": 0,
+      "aggressiveness": 1.6
+    },
+    {
+      "score": 5,
+      "aggressiveness": 1.562
+    },
+    {
+      "score": 10,
+      "aggressiveness": 1.533
+    },
+    {
+      "score": 15,
+      "aggressiveness": 1.52
+    },
+    {
+      "score": 20,
+      "aggressiveness": 1.527
+    },
+    {
+      "score": 25,
+      "aggressiveness": 1.261
+    },
+    {
+      "score": 30,
+      "aggressiveness": 1.291
+    },
+    {
+      "score": 35,
+      "aggressiveness": 1.323
+    },
+    {
+      "score": 40,
+      "aggressiveness": 1.038
+    },
+    {
+      "score": 45,
+      "aggressiveness": 1.049
+    },
+    {
+      "score": 50,
+      "aggressiveness": 1.048
+    },
+    {
+      "score": 55,
+      "aggressiveness": 0.776
+    },
+    {
+      "score": 60,
+      "aggressiveness": 0.76
+    },
+    {
+      "score": 65,
+      "aggressiveness": 0.742
+    },
+    {
+      "score": 70,
+      "aggressiveness": 0.532
+    },
+    {
+      "score": 75,
+      "aggressiveness": 0.524
+    },
+    {
+      "score": 80,
+      "aggressiveness": 0.523
+    },
+    {
+      "score": 85,
+      "aggressiveness": 0.528
+    },
+    {
+      "score": 90,
+      "aggressiveness": 0.539
+    },
+    {
+      "score": 95,
+      "aggressiveness": 0.552
+    },
+    {
+      "score": 100,
+      "aggressiveness": 0.565
+    }
+  ],
+  "tree_budget_mobile": [
+    {
+      "score": 0,
+      "trees": 140,
+      "mobile": true
+    },
+    {
+      "score": 10,
+      "trees": 140,
+      "mobile": true
+    },
+    {
+      "score": 20,
+      "trees": 140,
+      "mobile": true
+    },
+    {
+      "score": 30,
+      "trees": 140,
+      "mobile": true
+    },
+    {
+      "score": 40,
+      "trees": 280,
+      "mobile": true
+    },
+    {
+      "score": 50,
+      "trees": 280,
+      "mobile": true
+    },
+    {
+      "score": 60,
+      "trees": 480,
+      "mobile": true
+    },
+    {
+      "score": 70,
+      "trees": 480,
+      "mobile": true
+    },
+    {
+      "score": 80,
+      "trees": 480,
+      "mobile": true
+    },
+    {
+      "score": 90,
+      "trees": 480,
+      "mobile": true
+    },
+    {
+      "score": 100,
+      "trees": 480,
+      "mobile": true
+    }
+  ],
+  "tree_budget_desktop": [
+    {
+      "score": 0,
+      "trees": 450,
+      "mobile": false
+    },
+    {
+      "score": 10,
+      "trees": 450,
+      "mobile": false
+    },
+    {
+      "score": 20,
+      "trees": 450,
+      "mobile": false
+    },
+    {
+      "score": 30,
+      "trees": 450,
+      "mobile": false
+    },
+    {
+      "score": 40,
+      "trees": 450,
+      "mobile": false
+    },
+    {
+      "score": 50,
+      "trees": 900,
+      "mobile": false
+    },
+    {
+      "score": 60,
+      "trees": 900,
+      "mobile": false
+    },
+    {
+      "score": 70,
+      "trees": 1600,
+      "mobile": false
+    },
+    {
+      "score": 80,
+      "trees": 1600,
+      "mobile": false
+    },
+    {
+      "score": 90,
+      "trees": 1600,
+      "mobile": false
+    },
+    {
+      "score": 100,
+      "trees": 1600,
+      "mobile": false
+    }
+  ],
+  "max_cascades_by_tier": {
+    "ultra": 4,
+    "high": 4,
+    "medium": 3,
+    "low": 2,
+    "potato": 1
+  },
+  "shadow_cascade_splits": {
+    "ultra": [
+      23.52,
+      50.39,
+      94.87,
+      220.0
+    ],
+    "high": [
+      23.52,
+      50.39,
+      94.87,
+      220.0
+    ],
+    "medium": [
+      31.75,
+      76.09,
+      220.0
+    ],
+    "low": [
+      50.39,
+      220.0
+    ],
+    "potato": [
+      220.0
+    ]
+  },
+  "wind_gust_curve": [
+    0.8475,
+    0.9009,
+    0.9327,
+    0.9396,
+    0.923,
+    0.8886,
+    0.8448,
+    0.8017,
+    0.7682,
+    0.7507,
+    0.7517,
+    0.7695,
+    0.799,
+    0.8333,
+    0.865,
+    0.8889,
+    0.9023,
+    0.906,
+    0.9038,
+    0.9011,
+    0.9032,
+    0.9136,
+    0.9328,
+    0.9578,
+    0.9826,
+    0.9992,
+    1.0,
+    0.979,
+    0.9341,
+    0.8672,
+    0.7846,
+    0.6955,
+    0.6103,
+    0.5387,
+    0.4875,
+    0.4594,
+    0.4528,
+    0.4627,
+    0.4813,
+    0.501,
+    0.5153,
+    0.521,
+    0.5181,
+    0.5098,
+    0.5014,
+    0.4984,
+    0.5048,
+    0.5219,
+    0.5477,
+    0.5771,
+    0.6029,
+    0.618,
+    0.6168,
+    0.5972,
+    0.561,
+    0.514,
+    0.4652,
+    0.4243,
+    0.4005,
+    0.4,
+    0.4249,
+    0.4727,
+    0.5373,
+    0.6101
+  ],
+  "lod_distance_by_tier": {
+    "ultra": [
+      40.5,
+      108.0,
+      243.0
+    ],
+    "high": [
+      30.0,
+      80.0,
+      180.0
+    ],
+    "medium": [
+      21.6,
+      57.6,
+      129.6
+    ],
+    "low": [
+      15.0,
+      40.0,
+      90.0
+    ],
+    "potato": [
+      9.6,
+      25.6,
+      57.6
+    ]
+  },
+  "notes": "Estas tablas son la contribuci\u00f3n de Python al Council. JS aporta reactividad en tiempo real; C++ aporta kernels; Kotlin aporta pol\u00edtica declarativa; Python aporta reglas pre-computadas."
+}

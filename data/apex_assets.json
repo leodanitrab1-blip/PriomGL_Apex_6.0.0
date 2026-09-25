@@ -1,0 +1,1655 @@
+{
+  "version": 2,
+  "pipeline": "PriomGL Apex",
+  "virtualGeometry": {
+    "maxMeshletVertices": 64,
+    "maxMeshletTriangles": 126,
+    "lodRatios": [
+      1,
+      0.45,
+      0.18
+    ]
+  },
+  "assets": [
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-a.glb",
+      "bytes": 177316,
+      "triangles": 2046,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-b.glb",
+      "bytes": 212040,
+      "triangles": 2422,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-c.glb",
+      "bytes": 175844,
+      "triangles": 1928,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-d.glb",
+      "bytes": 100768,
+      "triangles": 1158,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-e.glb",
+      "bytes": 129400,
+      "triangles": 1484,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-f.glb",
+      "bytes": 134916,
+      "triangles": 1552,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-g.glb",
+      "bytes": 106940,
+      "triangles": 1242,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-h.glb",
+      "bytes": 63644,
+      "triangles": 698,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-i.glb",
+      "bytes": 73848,
+      "triangles": 798,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-j.glb",
+      "bytes": 80792,
+      "triangles": 886,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-k.glb",
+      "bytes": 65472,
+      "triangles": 702,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-l.glb",
+      "bytes": 162424,
+      "triangles": 1896,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-m.glb",
+      "bytes": 138920,
+      "triangles": 1694,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-n.glb",
+      "bytes": 109256,
+      "triangles": 1262,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-o.glb",
+      "bytes": 76552,
+      "triangles": 868,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-p.glb",
+      "bytes": 103760,
+      "triangles": 1162,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-q.glb",
+      "bytes": 181248,
+      "triangles": 2062,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-r.glb",
+      "bytes": 173056,
+      "triangles": 1912,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-s.glb",
+      "bytes": 81192,
+      "triangles": 876,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/building-t.glb",
+      "bytes": 139896,
+      "triangles": 1586,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/chimney-basic.glb",
+      "bytes": 9036,
+      "triangles": 88,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/chimney-large.glb",
+      "bytes": 20932,
+      "triangles": 218,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/chimney-medium.glb",
+      "bytes": 15020,
+      "triangles": 160,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/chimney-small.glb",
+      "bytes": 10536,
+      "triangles": 124,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/detail-tank-large.glb",
+      "bytes": 47452,
+      "triangles": 566,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/detail-tank.glb",
+      "bytes": 31436,
+      "triangles": 310,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/shipping-container-a.glb",
+      "bytes": 36624,
+      "triangles": 402,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/shipping-container-b.glb",
+      "bytes": 37052,
+      "triangles": 402,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/shipping-container-c.glb",
+      "bytes": 36620,
+      "triangles": 402,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/solar-panel-flat.glb",
+      "bytes": 13964,
+      "triangles": 164,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/solar-panel-landscape-group.glb",
+      "bytes": 81860,
+      "triangles": 976,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/solar-panel-landscape.glb",
+      "bytes": 21776,
+      "triangles": 244,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/solar-panel-portrait-group.glb",
+      "bytes": 81856,
+      "triangles": 976,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/solar-panel-portrait.glb",
+      "bytes": 21772,
+      "triangles": 244,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 6
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/water-tower.glb",
+      "bytes": 93836,
+      "triangles": 968,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/windmill-low.glb",
+      "bytes": 46296,
+      "triangles": 456,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/city-industrial/windmill.glb",
+      "bytes": 46292,
+      "triangles": 456,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/balcony-wall-fence.glb",
+      "bytes": 11236,
+      "triangles": 102,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/balcony-wall.glb",
+      "bytes": 7424,
+      "triangles": 64,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/banner-green.glb",
+      "bytes": 10200,
+      "triangles": 102,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/banner-red.glb",
+      "bytes": 9988,
+      "triangles": 98,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/blade.glb",
+      "bytes": 18792,
+      "triangles": 180,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/cart-high.glb",
+      "bytes": 88560,
+      "triangles": 1028,
+      "meshes": 3,
+      "nodes": 3,
+      "accessors": 15
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/cart.glb",
+      "bytes": 52920,
+      "triangles": 608,
+      "meshes": 3,
+      "nodes": 3,
+      "accessors": 15
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/chimney-base.glb",
+      "bytes": 8408,
+      "triangles": 78,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/chimney-top.glb",
+      "bytes": 7896,
+      "triangles": 78,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/chimney.glb",
+      "bytes": 4656,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fence-broken.glb",
+      "bytes": 11960,
+      "triangles": 124,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fence-curved.glb",
+      "bytes": 25408,
+      "triangles": 308,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fence-gate.glb",
+      "bytes": 46340,
+      "triangles": 560,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fence.glb",
+      "bytes": 7672,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-center.glb",
+      "bytes": 3280,
+      "triangles": 4,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-corner-inner-square.glb",
+      "bytes": 6908,
+      "triangles": 46,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-corner-inner.glb",
+      "bytes": 15000,
+      "triangles": 146,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-corner.glb",
+      "bytes": 8272,
+      "triangles": 60,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-curved.glb",
+      "bytes": 25048,
+      "triangles": 266,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-edge.glb",
+      "bytes": 6024,
+      "triangles": 36,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-round-detail.glb",
+      "bytes": 136888,
+      "triangles": 1628,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-round.glb",
+      "bytes": 84848,
+      "triangles": 1002,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-square-detail.glb",
+      "bytes": 32092,
+      "triangles": 334,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/fountain-square.glb",
+      "bytes": 27104,
+      "triangles": 270,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/hedge-curved.glb",
+      "bytes": 26312,
+      "triangles": 280,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/hedge-gate.glb",
+      "bytes": 8432,
+      "triangles": 76,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/hedge-large-curved.glb",
+      "bytes": 25024,
+      "triangles": 252,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/hedge-large-gate.glb",
+      "bytes": 18072,
+      "triangles": 164,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/hedge-large.glb",
+      "bytes": 9568,
+      "triangles": 90,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/hedge.glb",
+      "bytes": 6524,
+      "triangles": 54,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/lantern.glb",
+      "bytes": 14984,
+      "triangles": 158,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/overhang.glb",
+      "bytes": 7648,
+      "triangles": 68,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/pillar-stone.glb",
+      "bytes": 11324,
+      "triangles": 124,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/pillar-wood.glb",
+      "bytes": 5312,
+      "triangles": 44,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/planks-half.glb",
+      "bytes": 10164,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/planks-opening.glb",
+      "bytes": 16360,
+      "triangles": 144,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/planks.glb",
+      "bytes": 11148,
+      "triangles": 96,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/poles-horizontal.glb",
+      "bytes": 5660,
+      "triangles": 40,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/poles.glb",
+      "bytes": 4212,
+      "triangles": 28,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-bend.glb",
+      "bytes": 25044,
+      "triangles": 280,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-corner-inner.glb",
+      "bytes": 13552,
+      "triangles": 146,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-corner.glb",
+      "bytes": 13736,
+      "triangles": 150,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-curb-end.glb",
+      "bytes": 4828,
+      "triangles": 36,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-curb.glb",
+      "bytes": 2804,
+      "triangles": 12,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-edge-slope.glb",
+      "bytes": 5724,
+      "triangles": 38,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-edge.glb",
+      "bytes": 4912,
+      "triangles": 36,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road-slope.glb",
+      "bytes": 2820,
+      "triangles": 12,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/road.glb",
+      "bytes": 2788,
+      "triangles": 12,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/rock-large.glb",
+      "bytes": 18876,
+      "triangles": 200,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/rock-small.glb",
+      "bytes": 12620,
+      "triangles": 128,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/rock-wide.glb",
+      "bytes": 15172,
+      "triangles": 156,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-corner-inner.glb",
+      "bytes": 4464,
+      "triangles": 30,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-corner-round.glb",
+      "bytes": 5836,
+      "triangles": 44,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-corner.glb",
+      "bytes": 4996,
+      "triangles": 36,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-flat.glb",
+      "bytes": 3448,
+      "triangles": 20,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-gable-detail.glb",
+      "bytes": 12028,
+      "triangles": 128,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-gable-end.glb",
+      "bytes": 6056,
+      "triangles": 50,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-gable-top.glb",
+      "bytes": 6572,
+      "triangles": 56,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-gable.glb",
+      "bytes": 7632,
+      "triangles": 72,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-corner-round.glb",
+      "bytes": 6056,
+      "triangles": 48,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-corner.glb",
+      "bytes": 5008,
+      "triangles": 36,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-cornerinner.glb",
+      "bytes": 4284,
+      "triangles": 30,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-flat.glb",
+      "bytes": 3464,
+      "triangles": 20,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-gable-detail.glb",
+      "bytes": 12840,
+      "triangles": 140,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-gable-end.glb",
+      "bytes": 6268,
+      "triangles": 52,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-gable-top.glb",
+      "bytes": 6568,
+      "triangles": 56,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-gable.glb",
+      "bytes": 7456,
+      "triangles": 72,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-left.glb",
+      "bytes": 11376,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-point.glb",
+      "bytes": 6192,
+      "triangles": 44,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-right.glb",
+      "bytes": 10996,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high-window.glb",
+      "bytes": 20732,
+      "triangles": 258,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-high.glb",
+      "bytes": 8088,
+      "triangles": 64,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-left.glb",
+      "bytes": 12904,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-point.glb",
+      "bytes": 6180,
+      "triangles": 44,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-right.glb",
+      "bytes": 13004,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof-window.glb",
+      "bytes": 15524,
+      "triangles": 176,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/roof.glb",
+      "bytes": 9324,
+      "triangles": 64,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-full-corner-inner.glb",
+      "bytes": 8304,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-full-corner-outer.glb",
+      "bytes": 9440,
+      "triangles": 100,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-full.glb",
+      "bytes": 7064,
+      "triangles": 68,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-stone-corner.glb",
+      "bytes": 12792,
+      "triangles": 144,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-stone-handrail.glb",
+      "bytes": 23428,
+      "triangles": 272,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-stone-round.glb",
+      "bytes": 17840,
+      "triangles": 154,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-stone.glb",
+      "bytes": 12172,
+      "triangles": 136,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-wide-stone-handrail.glb",
+      "bytes": 23440,
+      "triangles": 272,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-wide-stone.glb",
+      "bytes": 12188,
+      "triangles": 136,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-wide-wood-handrail.glb",
+      "bytes": 43904,
+      "triangles": 560,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-wide-wood.glb",
+      "bytes": 33060,
+      "triangles": 424,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-wood-handrail.glb",
+      "bytes": 44228,
+      "triangles": 568,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stairs-wood.glb",
+      "bytes": 33384,
+      "triangles": 432,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stall-bench.glb",
+      "bytes": 14168,
+      "triangles": 180,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stall-green.glb",
+      "bytes": 27120,
+      "triangles": 322,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stall-red.glb",
+      "bytes": 24304,
+      "triangles": 270,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stall-stool.glb",
+      "bytes": 14172,
+      "triangles": 180,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/stall.glb",
+      "bytes": 11500,
+      "triangles": 106,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/tree-crooked.glb",
+      "bytes": 19252,
+      "triangles": 178,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/tree-high-crooked.glb",
+      "bytes": 21744,
+      "triangles": 210,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/tree-high-round.glb",
+      "bytes": 13176,
+      "triangles": 126,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/tree-high.glb",
+      "bytes": 20700,
+      "triangles": 200,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/tree.glb",
+      "bytes": 18188,
+      "triangles": 168,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-arch-top-detail.glb",
+      "bytes": 16076,
+      "triangles": 168,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-arch-top.glb",
+      "bytes": 12876,
+      "triangles": 146,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-arch.glb",
+      "bytes": 4840,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-block-half.glb",
+      "bytes": 8564,
+      "triangles": 76,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-block.glb",
+      "bytes": 8532,
+      "triangles": 76,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-broken.glb",
+      "bytes": 16904,
+      "triangles": 166,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-corner-detail.glb",
+      "bytes": 15748,
+      "triangles": 176,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-corner-diagonal-half.glb",
+      "bytes": 4788,
+      "triangles": 34,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-corner-diagonal.glb",
+      "bytes": 6032,
+      "triangles": 48,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-corner-edge.glb",
+      "bytes": 5416,
+      "triangles": 40,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-corner.glb",
+      "bytes": 6788,
+      "triangles": 52,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-curved.glb",
+      "bytes": 11432,
+      "triangles": 120,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-detail-cross.glb",
+      "bytes": 8464,
+      "triangles": 80,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-detail-diagonal.glb",
+      "bytes": 6672,
+      "triangles": 56,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-detail-horizontal.glb",
+      "bytes": 6240,
+      "triangles": 46,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-diagonal.glb",
+      "bytes": 5212,
+      "triangles": 38,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-door.glb",
+      "bytes": 29276,
+      "triangles": 376,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-doorway-base.glb",
+      "bytes": 8028,
+      "triangles": 64,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-doorway-round.glb",
+      "bytes": 13332,
+      "triangles": 172,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-doorway-square-wide-curved.glb",
+      "bytes": 14316,
+      "triangles": 166,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-doorway-square-wide.glb",
+      "bytes": 5864,
+      "triangles": 46,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-doorway-square.glb",
+      "bytes": 7844,
+      "triangles": 70,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-half.glb",
+      "bytes": 4808,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-rounded.glb",
+      "bytes": 12616,
+      "triangles": 136,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-side.glb",
+      "bytes": 3852,
+      "triangles": 22,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-slope.glb",
+      "bytes": 4812,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-window-glass.glb",
+      "bytes": 15708,
+      "triangles": 178,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-window-round.glb",
+      "bytes": 22356,
+      "triangles": 278,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-window-shutters.glb",
+      "bytes": 23892,
+      "triangles": 286,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-window-small.glb",
+      "bytes": 9376,
+      "triangles": 102,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-window-stone.glb",
+      "bytes": 12484,
+      "triangles": 140,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-arch-top-detail.glb",
+      "bytes": 16092,
+      "triangles": 168,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-arch-top.glb",
+      "bytes": 12892,
+      "triangles": 146,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-arch.glb",
+      "bytes": 4856,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-block-half.glb",
+      "bytes": 8580,
+      "triangles": 76,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-block.glb",
+      "bytes": 8548,
+      "triangles": 76,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-broken.glb",
+      "bytes": 16344,
+      "triangles": 166,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-corner-diagonal-half.glb",
+      "bytes": 4804,
+      "triangles": 34,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-corner-diagonal.glb",
+      "bytes": 6048,
+      "triangles": 48,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-corner-edge.glb",
+      "bytes": 5432,
+      "triangles": 40,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-corner.glb",
+      "bytes": 6804,
+      "triangles": 52,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-curved.glb",
+      "bytes": 11444,
+      "triangles": 120,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-detail-cross.glb",
+      "bytes": 8480,
+      "triangles": 80,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-detail-diagonal.glb",
+      "bytes": 6684,
+      "triangles": 56,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-detail-horizontal.glb",
+      "bytes": 6256,
+      "triangles": 46,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-diagonal.glb",
+      "bytes": 5228,
+      "triangles": 38,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-door.glb",
+      "bytes": 30744,
+      "triangles": 376,
+      "meshes": 2,
+      "nodes": 2,
+      "accessors": 10
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-doorway-base.glb",
+      "bytes": 8044,
+      "triangles": 64,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-doorway-round.glb",
+      "bytes": 15068,
+      "triangles": 172,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-doorway-square-wide-curved.glb",
+      "bytes": 14332,
+      "triangles": 166,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-doorway-square-wide.glb",
+      "bytes": 5876,
+      "triangles": 46,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-doorway-square.glb",
+      "bytes": 8664,
+      "triangles": 82,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-half.glb",
+      "bytes": 4824,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-rounded.glb",
+      "bytes": 12632,
+      "triangles": 136,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-side.glb",
+      "bytes": 3868,
+      "triangles": 22,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-slope.glb",
+      "bytes": 8544,
+      "triangles": 84,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-window-glass.glb",
+      "bytes": 11184,
+      "triangles": 122,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-window-round.glb",
+      "bytes": 23636,
+      "triangles": 294,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-window-shutters.glb",
+      "bytes": 10612,
+      "triangles": 122,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-window-small.glb",
+      "bytes": 11808,
+      "triangles": 134,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood-window-stone.glb",
+      "bytes": 16844,
+      "triangles": 202,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall-wood.glb",
+      "bytes": 4808,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wall.glb",
+      "bytes": 4792,
+      "triangles": 32,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/watermill-wide.glb",
+      "bytes": 53872,
+      "triangles": 600,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/watermill.glb",
+      "bytes": 53856,
+      "triangles": 600,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/wheel.glb",
+      "bytes": 17184,
+      "triangles": 192,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/kenney/fantasy-town/windmill.glb",
+      "bytes": 71160,
+      "triangles": 732,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 5
+    },
+    {
+      "file": "/mnt/data/prio_src/PriomGL_Polyglot/models/test_cube.glb",
+      "bytes": 2000,
+      "triangles": 12,
+      "meshes": 1,
+      "nodes": 1,
+      "accessors": 3
+    }
+  ]
+}
